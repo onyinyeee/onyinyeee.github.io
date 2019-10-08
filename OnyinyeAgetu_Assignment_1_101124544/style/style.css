@@ -1,0 +1,195 @@
+ 
+            body {
+                font-family: Arial, sans-serif;
+                background-color:#121012;
+            }
+
+            h7 {
+                font-size: 25px;
+            }
+            
+            .nav-button {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                display: block;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+            }
+            .works {
+              color: rgb(255, 255, 255);
+              background-color: transparent;
+              display: inline-block;
+              text-align: center;
+              padding: 10px 50px;
+              text-decoration: none;
+          }
+            
+            span { 
+                float: left;
+                width: 25%;
+            }
+            
+            a:hover {
+                color: yellowgreen;
+            }
+            
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 2; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+            }
+
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            .container {
+              display: block;    
+              position: relative;
+              width: 80%;
+              height: 100%;
+            }
+            
+            .container image{
+              display: block;    
+              position: relative;
+              width: 500px;
+            }
+
+            .image {
+              opacity: 1;
+              display: block;
+              width: 1200px;
+              height: auto;
+              transition: .5s ease;
+              backface-visibility: hidden;
+            }
+
+            .middle {
+              transition: .5s ease;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              text-align: center;
+            }
+
+            .container:hover .image {
+              opacity: 0.2;
+            }
+
+            .container:hover .middle {
+              opacity: 1;
+            }
+
+            .text {
+              background-color: #DB7093;
+              color: white;
+              font-size: 16px;
+              padding: 16px 32px;
+            }
+
+            .gallery {
+                margin: 10px 50px;
+            }
+
+            .gallery img{
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                padding-bottom: 30px;
+                padding-right: 30px;
+                transition: 1s;
+            }
+
+             .gallery img a{
+                  text-decoration: none;
+             }
+
+            .gallery img hover{
+                transform: scale(3.3);
+                
+            }
+
+             .social-icons {
+                  text-align: center;
+                  }  
+            .social-icons li {
+                  display:inline-block;
+                  list-style-type:none;
+                  -webkit-user-select:none;
+                  -moz-user-select:none;
+                  }
+            .social-icons li a {
+                  border-bottom: none;
+                  }
+            .social-icons li img {
+                  width:40px;
+                  height:40px;
+                  margin-right: 20px;
+                  padding-top: 2px;
+                  
+                }
+            
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                
+                width: 100%;
+                height: 70px;
+                padding-top: 10px;
+                background-color: black;
+                 opacity: 0.5;
+                color: white;
+                text-align: center;
+            }
+
+            
+
+            .footer ul li {
+              padding-top: 1px;
+          }
+
+            @media screen and (max-width: 500px) {
+              .column {
+                width: 100%;
+              }
+            }
+
+            @media(max-width:960px){
+             .container{
+                padding-right: 3rem;
+                    padding-left: 3rem;
+             }
+      }
