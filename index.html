@@ -1,46 +1,226 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Onyinye Agetu</title>
-        <style>
-            .social-icons {
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+    h1{
+        text-align: center;
+        font-family: monospace;
+        font-display: block;
+        color: antiquewhite;
+         margin-top: 150px;
+        font-size: 100px;
+    }
+    
+    h2 {
+        margin-top:100px;
+        font-family: monospace;
+        font-display: block;
+        font-size: 20px;
+        text-align: center;
+        color: antiquewhite;
+        padding-left: 630px;
+        position: fixed;
+    }
+    
+     h3{
+        text-align: center;
+        color: aqua;
+         font-family: monospace;
+        font-display: block;
+         margin-top: 30px;
+        font-size: 50px;
+    }
+    
+    .arrow{
+        align-content: center;
+        padding-left: 630px;
+        height: 30px;
+        width: 30px;        
+    }
+    
+    .about{
+        opacity: 0;
+    }
+    
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  background-attachment: fixed;
+ z-index: -1;
+    }
+
+.content {
+    position: absolute;
+  top: 100%;
+  background: #121012;
+  color:antiquewhite;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+    }
+    
+.nav{
+    overflow: hidden;
+  background: rgba(0, 0, 0, 0) ;
+    margin-top: 30px;
+    }
+
+  .nav-button {
+               float:right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+  font-display: block;
+            }
+    
+.nav-button:hover{
+    color: darkslategrey;
+    text-decoration: line-through;
+    text-decoration-color: aqua;
+            }
+   
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+    color: black;}
+    
+.social-icons {
                   text-align: center;
                   }  
-            .social-icons li {
-                  display:inline-block;
-                  list-style-type:none;
-                  -webkit-user-select:none;
-                  -moz-user-select:none;
+.social-icons li {
+        display:inline-block;
+        list-style-type:none;
+        -webkit-user-select:none;
+         -moz-user-select:none;
                   }
-            .social-icons li a {
-                  border-bottom: none;
+.social-icons li a {
+         border-bottom: none;
                   }
-            .social-icons li img {
-                  width:70px;
-                  height:70px;
-                  margin-right: 20px;
+.social-icons li img {
+         width:60px;
+         height:60px;
+         margin-right: 20px;
+         padding-top: 2px;
+                  
                 }
-        </style>
-        <link rel="stylesheet" href="style/style2.css" />
-     </head>
-    <body>
-        <header class="v-header container"ss>
-            <div class="fullscreen-video-wrap">
-                <video src="vidsource/Smoke_Dark_12_Videvo.mov" autoplay loop muted></video>
+.btn{
+    width: 200px;
+    font-family: monospace;
+        font-display: block;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #34b3a0;
+  color: #fff;
+  cursor: pointer;
+    text-decoration: none;
+}
+    
+.btn:hover{
+  background: #ddd;
+    color: black;}
+}
+    
+    
+    
+    
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="vidsource/Smoke_Dark_12_Videvo.mov" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+    
+    <div class="nav">
+            <a class="nav-button" href="contact%20me.html">CONTACT ME</a>
+            <a class="nav-button" href="digital%20art.html">PROJECTS</a>
+            <a class="nav-button" href="about.html">ABOUT</a>
+            
+            
+            
+           <a class="logo" href="index.html"><img src="imgsource/Pinterest.png" height="80px" style="padding-left:30px"/> </a>
             </div>
-            <div class="header-overlay"></div>
-            <div class="header-content">
-                <h1>ONYINYE AGETU</h1>
-                <h3>Artist, Developer, Illustrator, Animator</h3>
+    
+      
+    <h1>ONYINYE AGETU</h1>
                 <ul class="social-icons">
                     <li><a href="https://www.instagram.com/?hl=en"><img src="imgsource/Instagram.png"/></a></li>
                     <li><a href="https://plus.google.com/discover"><img src="imgsource/Google+.png"/></a></li>
                     <li><a href="https://www.pinterest.ca/"><img src="imgsource/Pinterest.png"/></a></li>
                     <li><a href="https://www.youtube.com/"><img src="imgsource/YouTube.png"/></a></li>
                 </ul>
-                <br>
-                <br>
-            <a href="portfolio.html" class="btn">visit</a>  
-            </div>
-        </header>   
-    </body>
- </html>    
+    
+    <h2> scroll </h2>
+    
+   
+<div class="content">
+    <center><button id="myBtn" onclick="myFunction()">Pause</button></center>
+  <h3>ABOUT ME.</h3>
+ <table border="0" >
+            <tr>
+                <th>
+                    <div class="about">Hello! Welcome to my portfolio website. I am currently a student at carleton university in the interactive multimedia design program. I've been interested in art and technology for as long as I can remember and i consider to be a huge part of my life. through my time in university, i have learned multiple skills including web and graphic design.</div>
+                    <br>
+                    <br>
+                    <br>
+                    <center><a href="about.html" class="btn"> RESUME</a></center>
+                </th>
+                <th>
+                 <img src="imgsource/33936107_196769847637560_1022054692911316992_n.jpg"
+                 width=300px;
+                 height=400px;>
+                </th>
+            </tr>
+        </table>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+    
+    
+  
+    
+</script>
+
+</body>
+</html>
